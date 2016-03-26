@@ -1,0 +1,5 @@
+./bin
+./crosstool-NG
+./local_bin
+./.__esp_mqtt
+./ESP8266_SDK.bak
