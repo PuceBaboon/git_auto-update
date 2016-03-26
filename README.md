@@ -20,6 +20,6 @@ All of these files can be customized by editing the settings in the top few line
 The idea is that the script will be called from cron once a week (or once a night, or once a month) and will quietly pull in the latest and greatest updates from all of those projects you've been following.  You might additionally want to email yourself a copy of the log file after the script completes.
 
 <code>
-## Auto update of ESP8266 projects (early on Monday mornings).
-42	02	*	*	1	/bin/sh /FuLl/PaTh/To/auto_update.sh >> /var/tmp/GitPull.log 2>&1
+# Auto update of ESP8266 projects (early on Monday mornings).
+42	02	*	*	1	/bin/sh /FuLl/PaTh/To/git_auto_update.sh >> /var/tmp/GitPull.log 2>&1
 </code>
