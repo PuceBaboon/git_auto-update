@@ -11,7 +11,9 @@ Fall back on the tried and tested shell-script-plus-cron method.
 
 This script uses "find" to build a tree of the subdirectories below a given starting point and then checks for a .git subdirectory within each of them to decide whether to run a "pull" or not.
 
-It recognizes an exclude file (currently named "Do_Not_Update.txt") in the top-level directory which should contain a list of subdirectories, one per line, which you do -not- want to have updated (these might be active branches which you're working on).  It also recognizes an empty file (named "Do_Not_Update") which, if present in a subdirectory, will also cause that specific directory to be excluded from the automatic update process.
+It recognizes an exclude file (currently named "Do_Not_Update.txt") in the top-level directory which should contain a list of subdirectories, one per line, which you do -not- want to have updated (these might be active branches which you're working on). Please refer to the included example Do_Not_Update.txt file for the format of entries for this file.  
+
+The script also recognizes an empty file (named "Do_Not_Update") which, if present in a subdirectory, will cause that specific directory to be excluded from the automatic update process.
 
 The script writes a log file with the status of each attempted pull request.  
 
