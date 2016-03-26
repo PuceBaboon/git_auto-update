@@ -17,5 +17,9 @@ The script writes a log file with the status of each attempted pull request.
 
 All of these files can be customized by editing the settings in the top few lines of the script.  The WK_DIR variable sets the path to the top-level (starting point) directory and should be changed to suit your needs.
 
+The idea is that the script will be called from cron once a week (or once a night, or once a month) and will quietly pull in the latest and greatest updates from all of those projects you've been following.  You might additionally want to email yourself a copy of the log file after the script completes.
 
-As it stands
+<code>
+## Auto update of ESP8266 projects (early on Monday mornings).
+42	02	*	*	1	/bin/sh /FuLl/PaTh/To/auto_update.sh >> /var/tmp/GitPull.log 2>&1
+</code>
